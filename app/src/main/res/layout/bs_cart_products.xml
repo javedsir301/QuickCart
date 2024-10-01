@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clCartProducts"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="vertical"
+        android:padding="6.50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="13dp"
+            android:layout_marginStart="2.60dp"
+            android:text="@string/products_in_the_cart"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:textSize="18.20sp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvProductItems"
+            android:layout_marginBottom="9.10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llCart"
+            android:baselineAligned="false"
+            android:padding="13dp"
+            android:weightSum="1"
+            android:background="@drawable/bg_cart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="bottom|center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/llItemCart"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="39.00dp"
+                    android:layout_height="39.00dp"
+                    android:id="@+id/ivProductImage"
+                    android:padding="3.90dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/baseline_add_shopping_cart_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNumberOfProductCount"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="13dp"
+                    android:text="@string/_0_"
+                    android:textSize="18.20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2.6dp"
+                    android:text="@string/item_"
+                    android:textSize="18.20sp"/>
+
+                <ImageButton
+                    android:id="@+id/ivShowingProductsCart"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="6.50dp"
+                    android:contentDescription="@string/todo"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/up_arrow_icon" />
+
+                <ImageButton
+                    android:id="@+id/ivShowingProductsCartDown"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="6.50dp"
+                    android:contentDescription="@string/todo"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/baseline_arrow_drop_down_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/procut_count_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/next"
+                    android:textColor="@color/white"
+                    android:textSize="19.90sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:layout_width="16.50dp"
+                    android:layout_height="16.50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="6.50dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right_arrow_icon" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

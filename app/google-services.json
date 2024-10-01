@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "718174901306",
+    "project_id": "quickcart-fa078",
+    "storage_bucket": "quickcart-fa078.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718174901306:android:bc8ad70de72207450b1103",
+        "android_client_info": {
+          "package_name": "com.example.quickcart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE-DG8RkbO_uIdhzHkfzAMRgJ4UGYRWRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
